@@ -22,7 +22,8 @@ if "config" not in globals() or not config:  # skip when used as sub-workflow
     if not exists("config.yaml"):
         copyfile("config.tutorial.yaml", "config.yaml")
 
-    configfile: "config.yaml"
+    configfile: "config.yaml" #original 
+    # configfile: "pypsa-kz-data/config_kz_default.yaml"
 
 
 configfile: "configs/bundle_config.yaml"
